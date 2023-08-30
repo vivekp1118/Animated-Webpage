@@ -1,7 +1,6 @@
-import Image from 'next/image'
-
+import Nav from "./Nav"
 export default function Home() {
   return (
-    <h1>This is My nect  app</h1>
+    <Nav/>
   )
 }
