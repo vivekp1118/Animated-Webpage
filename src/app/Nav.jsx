@@ -8,7 +8,7 @@ function Navbar() {
             <span className="nav-links cursor-pointer">Self Awareness Test</span> 
             <span className="nav-links cursor-pointer">Work With Us</span> 
         </div>
-        <div className=" h-12 w-52 text-center text-white leading-[3rem] bg-black rounded-3xl"> Downlaod App</div>
+        <div className=" h-12 w-44 text-center text-white font-medium leading-[3rem] bg-black rounded-3xl"> Download app</div>
         </nav>
      );
 }
