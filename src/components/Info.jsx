@@ -11,7 +11,7 @@ function Info() {
   gsap.registerPlugin(ScrollTrigger)
   useEffect(() => {
     const elements = [
-      { ref: headerRef, start: { opacity: 0, x: -100, y: 100, scale: 0 } },
+      { ref: headerRef, start: { opacity: 0, x: -200, y: 0, scale: 1 } },
       { ref: catRef, start: { opacity: 0, x: -100, y: 100, scale: 0 } },
       { ref: paraRef, start: { opacity: 0, x: 300 } }
     ];
