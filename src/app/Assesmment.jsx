@@ -1,6 +1,6 @@
 function Assesment() {
     return (
-        <div className="h-[auto] w-[100vw] px-12 relative ">
+        <div className="h-[auto] w-[100vw] relative box-border px-12 overflow-hidden ">
             <div className="w-[100%] h-[100%] flex flex-col gap-14 items-center rounded-2xl bg-[#EDF8FE] pt-10 pb-20 " >
                 <div className="text-center">
 
