@@ -5,6 +5,7 @@ import Info from "./Info"
 import Scroller from "./ImprovementScroller"
 import Assesment from "./Assesmment"
 import Test from "./Test"
+import About from "./About"
 export default function Home() {
   return (
     <>
@@ -15,6 +16,7 @@ export default function Home() {
     <Scroller/>
     <Assesment/>
     <Test/>
+    <About/>
     </>
   )
 }
