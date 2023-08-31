@@ -4,7 +4,7 @@ function JobCard(props) {
     const [showDetails, setShowDetails] = useState(null);
 
     return (
-        <div className="w-[340px] h-[fit-content] bg-[#FEFBEC] p-7 rounded-2xl shadow-lg transition-all duration-3000 ease-in-out cursor-pointer"
+        <div className="w-[340px] h-[fit-content] bg-[#FEFBEC] p-7 rounded-2xl shadow-lg transition duration-3000 ease-in-out cursor-pointer"
             onMouseEnter={() => setShowDetails(props.id)}
             onMouseLeave={() => setShowDetails(null)}
         >
