@@ -1,4 +1,4 @@
-import ImprovementCard from "@/Components/ImprovementCard";
+import ImprovementCard from "@/Utils/ImprovementCard";
 function Scroller() {
     return (
         <>
