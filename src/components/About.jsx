@@ -35,7 +35,7 @@ function About() {
               <p className="text-2xl font-semibold my-3">About</p>
               <p className="text-lg font-medium text-gray-600 ">
                 At ahead our goal is to make self- improvement fun and lasting.
-                We know there's a way how to make it work. And that's what aHead
+                We know there&rsquo;s a way how to make it work. And that&apos;s what aHead
                 is all about!
               </p>
             </div>

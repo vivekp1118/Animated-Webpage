@@ -32,8 +32,8 @@ function Test() {
         </div>
         <div className="text-4xl  font-semibold">Before you get started</div>
         <div className="text-[1.3rem] font-medium text-gray-700 leading-10">
-          "We won't share your answers with anyone (and won't ever tell you
-          which friends said what about you)"
+          We won&apos;t share your answers with anyone (and won&apos;t ever tell you which friends said what about you)
+
         </div>
         <div className="text-lg text-black font-medium my-5">
           with love, Team aloud

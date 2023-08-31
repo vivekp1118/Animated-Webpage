@@ -11,13 +11,13 @@ function Scroller() {
   const titleHeaderRef = useRef(null);
   const catRef = useRef(null);
 
-  const elements = [
-    { ref: headerRef, start: { opacity: 0, x: -200, y: 0 } },
-    { ref: titleHeaderRef, start: { opacity: 0, x: -300, y: 0 } },
-    { ref: catRef, start: { opacity: 0, x: 300, y: -300, rotate: -90, } },
-  ];
 
   useEffect(() => {
+    const elements = [
+      { ref: headerRef, start: { opacity: 0, x: -200, y: 0 } },
+      { ref: titleHeaderRef, start: { opacity: 0, x: -300, y: 0 } },
+      { ref: catRef, start: { opacity: 0, x: 300, y: -300, rotate: -90, } },
+    ];
     const t1 = gsap.timeline({
       scrollTrigger: {
         trigger: headerRef.current,
@@ -54,7 +54,7 @@ function Scroller() {
     <>
       <div className="h-[100vh] w-[100vw] p-24 relative overflow-hidden">
         <p className="text-lg font-medium text-gray-800 mt-3" ref={headerRef}>
-          Wrong with self-improvement & how we're fixing it.
+          Wrong with self-improvement &amp; how we&apos;re fixing it.
         </p>
         <p className="text-5xl font-bold mb-4 inline-block" ref={titleHeaderRef}>
           Self-improvement. Ugh.
