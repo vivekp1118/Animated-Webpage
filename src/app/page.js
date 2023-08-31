@@ -7,6 +7,7 @@ import Assesment from "./Assesmment"
 import Test from "./Test"
 import About from "./About"
 import Careers from "./Careers"
+import Footer from "./Footer"
 export default function Home() {
   return (
     <>
@@ -19,6 +20,7 @@ export default function Home() {
     <Test/>
     <About/>
     <Careers/>
+    <Footer/>
     </>
   )
 }

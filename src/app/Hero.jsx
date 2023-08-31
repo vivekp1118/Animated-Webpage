@@ -11,9 +11,8 @@ function Hero() {
               Master your life by mastering emotions.
             </p>
             <div className="flex gap-10">
-              <button className="bg-black text-white rounded-xl px-9 py-3 ]">
-                Download App
-              </button>
+            <div className="w-[150px] h-[45px] bg-[url('/app-store.svg')] bg-cover"></div>
+
               <p className="text-left">
                 <span className="block">⭐ ⭐ ⭐ ⭐ ⭐</span>
                 <span className="text-gray-800 ml-1 block">
