@@ -5,7 +5,6 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 function HabitsCard() {
-  const triggerRef = useRef(null)
   const sectionRef = useRef(null)
   gsap.registerPlugin(ScrollTrigger)
 
@@ -15,7 +14,6 @@ function HabitsCard() {
       duration: 2,
       ease: "none",
       scrollTrigger: {
-        markers: true,
         trigger: "#scroller",
         start: "top 90%",
         end: "bottom 25%",
