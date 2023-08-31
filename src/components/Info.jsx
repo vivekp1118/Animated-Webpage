@@ -20,8 +20,8 @@ function Info() {
       scrollTrigger: {
         trigger: headerRef.current,
         markers: true,
-        start: "bottom bottom",
-        end: "top 50%",
+        start: "bottom 70%",
+        end: "top 40%",
         scrub: true
       }
     });

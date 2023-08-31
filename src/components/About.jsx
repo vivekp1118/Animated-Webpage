@@ -52,7 +52,7 @@ function About() {
 
         <div className="w-[40%] h-full">
           <p className="text-5xl flex font-semibold text-[#6542EA] mb-8" ref={aheadHeader}>ahead</p>
-          <div className="flex flex-col flex-nowrap gap-10 h-[85%] overflow-scroll">
+          <div className="flex flex-col flex-nowrap gap-10 h-[85%] overflow-scroll custom-scroller">
             <div className="h-[220px] w-[330px] bg-white rounded-2xl p-9 ">
               <p className="text-base font-medium text-black pb-5">
                 Power through, even when the going gets tough
