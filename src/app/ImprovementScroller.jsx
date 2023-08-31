@@ -4,7 +4,10 @@ function Scroller() {
         <>
         <div className="h-[100vh] w-[100vw] p-24 relative overflow-hidden">
             <p className="text-lg font-medium text-gray-800 my-4">Wrong with self-improvement & how we're fixing it.</p>
-            <p className="text-5xl font-bold my-4">Self-improvement. Ugh.</p>
+            <div>
+            <p className="text-5xl font-bold my-4 inline-block">Self-improvement. Ugh.</p>
+            <span className="inline-block h-14 w-14 bg-[url('/CryingCat.png')] bg-center bg-cover ml-5"> </span>
+            </div>
 
             <div className="flex w-[100%] h-[90vh] px-5 justify-center overflow-y-auto">
                 <div className="flex flex-col w-[550px] gap-14  mt-10 flex-nowrap" >
