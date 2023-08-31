@@ -1,5 +1,4 @@
 "use client";
-import ImprovementCard from "@/Utils/ImprovementCard";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
