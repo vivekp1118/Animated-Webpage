@@ -35,6 +35,32 @@ function HabitsCard() {
                     header="You argue with a colleague"
                     text="You get angry and defensive, instead of staying open and working towards common ground."
                 />
+
+<EmojiCard
+                    color="#6443E9"
+                    isDark={true}
+                    emoji="😧"
+                    header="You argue with a colleague"
+                    text="You get angry and defensive, instead of staying open and working towards common ground."
+                />
+                <EmojiCard
+                    color="#EEEBFE"
+                    emoji="😠"
+                    header="You argue with a colleague"
+                    text="You get angry and defensive, instead of staying open and working towards common ground."
+                />
+                <EmojiCard
+                    color="#FFEFD5"
+                    emoji="🤔"
+                    header="You get a promotion at work"
+                    text="You question yourself and wonder when they'll realize you're an unqualified imposter, instead of trusting yourself & your abilities."
+                />
+                <EmojiCard
+                    color="#d8f2ff"
+                    emoji="😧"
+                    header="You argue with a colleague"
+                    text="You get angry and defensive, instead of staying open and working towards common ground."
+                />
             </div>
             </div>
         </div>
