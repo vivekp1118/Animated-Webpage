@@ -1,13 +1,14 @@
 "use client"
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-
+import { ScrollTrigger } from "gsap/all";
 function Info() {
   const headerRef = useRef(null)
   const catRef = useRef(null)
   const paraRef = useRef(null)
 
 
+  gsap.registerPlugin(ScrollTrigger)
   useEffect(() => {
     const elements = [
       { ref: headerRef, start: { opacity: 0, x: -100, y: 100, scale: 0 } },
@@ -17,10 +18,11 @@ function Info() {
 
     const t1 = gsap.timeline({
       scrollTrigger: {
-        trigger: "#scroller",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: 2
+        trigger: headerRef.current,
+        markers: true,
+        start: "bottom bottom",
+        end: "top 50%",
+        scrub: true
       }
     });
 

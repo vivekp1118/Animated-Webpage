@@ -1,19 +1,68 @@
+"use client";
 import ImprovementCard from "@/Utils/ImprovementCard";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
+
 function Scroller() {
+  gsap.registerPlugin(ScrollTrigger)
+  const headerRef = useRef(null);
+  const titleHeaderRef = useRef(null);
+  const catRef = useRef(null);
+
+  const elements = [
+    { ref: headerRef, start: { opacity: 0, x: -200, y: 0 } },
+    { ref: titleHeaderRef, start: { opacity: 0, x: -300, y: 0 } },
+    { ref: catRef, start: { opacity: 0, x: 300, y: -300, rotate: -90, } },
+  ];
+
+  useEffect(() => {
+    const t1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: headerRef.current,
+        start: "bottom bottom",
+        end: "top 50%",
+
+        scrub: 1
+      }
+    });
+
+    elements.forEach(({ ref, start }) => {
+      t1.fromTo(
+        ref.current,
+        start,
+        {
+          opacity: 1,
+          duration: 2,
+          x: 0,
+          y: 0,
+          scale: 1,
+          rotate: 0,
+          ease: "none"
+        }
+      );
+    });
+
+    return () => {
+      t1.kill();
+    };
+  }, []);
+
+
   return (
     <>
       <div className="h-[100vh] w-[100vw] p-24 relative overflow-hidden">
-        <p className="text-lg font-medium text-gray-800 my-4">
+        <p className="text-lg font-medium text-gray-800 mt-3" ref={headerRef}>
           Wrong with self-improvement & how we're fixing it.
         </p>
-        <div>
-          <p className="text-5xl font-bold my-4 inline-block">
-            Self-improvement. Ugh.
-          </p>
-          <span className="inline-block h-14 w-14 bg-[url('/CryingCat.png')] bg-center bg-cover ml-5">
-            {" "}
-          </span>
-        </div>
+        <p className="text-5xl font-bold mb-4 inline-block" ref={titleHeaderRef}>
+          Self-improvement. Ugh.
+        </p>
+        <span
+          className="inline-block h-14 w-14 bg-[url('/CryingCat.png')] bg-center bg-cover ml-5"
+          ref={catRef}
+        />
 
         <div className="flex w-[100%] h-[90vh] px-5 justify-center overflow-y-auto">
           <div className="flex flex-col w-[550px] gap-14  mt-10 flex-nowrap">
