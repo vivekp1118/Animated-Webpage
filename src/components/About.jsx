@@ -1,9 +1,35 @@
+"use client";
+import ImprovementCard from "@/Utils/ImprovementCard";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger)
+
 function About() {
+  const workHeader = useRef(null);
+  const aheadHeader = useRef(null);
+
+  useEffect(() => {
+    const t1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: workHeader.current,
+        start: "top 90%",
+        end: "top 50%",
+        scrub: 2,
+      },
+    });
+
+    t1.fromTo(workHeader.current, { opacity: 0, x: -200 }, { opacity: 1, x: 0, duration: 1 });
+    t1.fromTo(aheadHeader.current, { opacity: 0, x: 200 }, { opacity: 1, x: 0, duration: 1 });
+    return () => {
+      t1.kill();
+    };
+  }, [])
   return (
     <div className="h-[120vh] w-[100%] mx-12 rounded-2xl pt-10 bg-[#F3F1FF] overflow-hidden">
       <div className="flex justify-between p-10 h-[100%] w-[100%] shadow-lg">
-        <div className="flex flex-col gap-8 w-[40%] h-full">
-          <p className="text-5xl font-bold">Work with us</p>
+        <div className="flex flex-col gap-8 w-[40%] h-[100%]">
+          <p className="text-5xl font-bold" ref={workHeader}>Work with us</p>
           <div className="h-[100%] w-[100%] bg-white rounded-2xl">
             <div className="p-10">
               <span className="block h-14 w-14 bg-[url('/JoyFulCat.png')] bg-center bg-cover"></span>
@@ -26,8 +52,8 @@ function About() {
         </div>
 
         <div className="w-[40%] h-full">
-          <p className="text-5xl font-semibold text-[#6542EA] mb-8">ahead</p>
-          <div className="flex flex-col flex-nowrap gap-10 h-[100%] shadow-sm overflow-scroll">
+          <p className="text-5xl flex font-semibold text-[#6542EA] mb-8" ref={aheadHeader}>ahead</p>
+          <div className="flex flex-col flex-nowrap gap-10 h-[85%] overflow-scroll">
             <div className="h-[220px] w-[330px] bg-white rounded-2xl p-9 ">
               <p className="text-base font-medium text-black pb-5">
                 Power through, even when the going gets tough

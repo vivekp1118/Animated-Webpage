@@ -3,10 +3,10 @@ import ImprovementCard from "@/Utils/ImprovementCard";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger)
 
 
 function Scroller() {
-  gsap.registerPlugin(ScrollTrigger)
   const headerRef = useRef(null);
   const titleHeaderRef = useRef(null);
   const catRef = useRef(null);
