@@ -1,6 +1,6 @@
 function EmojiCard(props) {
     return ( 
-        <div className={`p-8 w-80 h-60 rounded-2xl flex flex-col text-left gap-4 flex-shrink-0 m-5`} style={{ background: props.color}}>
+        <div className={`p-8 w-80 h-60 rounded-2xl flex flex-col text-left gap-4 flex-shrink-0`} style={{ background: props.color}}>
             <div className="text-4xl">{props.emoji}</div>
             {!props.isDark ? 
                 <>

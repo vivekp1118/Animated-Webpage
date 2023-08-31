@@ -1,12 +1,12 @@
 function Info() {
   return (
-    <div className="h-[100vh] w-[100vw] p-12">
-      <div className="w-[100%] h-[100%] flex flex-col justify-center rounded-2xl bg-[#FEF6F1] p-10">
+    <div className="h-[100vh] w-[100vw] p-12 relative ">
+      <div className="w-[100%] h-[100%] flex flex-col justify-center rounded-2xl bg-[#FEF6F1] p-10 " >
         <div>
-          <p className="font-semibold my-5 text-gray-900">
+          <p className="text-lg font-semibold my-4 text-gray-700">
             Built out of frustration
           </p>
-          <p className="text-5xl font-bold my-5">Meet the ahead app</p>
+          <p className="text-5xl font-bold my-4">Meet the ahead app</p>
         </div>
         <div className="flex flex-row w-[100%] h[100%] my-6">
           <div className="w-[50%]">
