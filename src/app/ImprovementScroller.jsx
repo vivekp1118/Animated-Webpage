@@ -39,6 +39,35 @@ Books just don't offer practical solutions."
                         desc="Remember when you learned to ride a bike just by reading? Yeah we don't either. We're not saying books are bad, but they're not the best way to learn new skills.
                          We're here to help you learn by doing."
                     />
+
+<ImprovementCard
+                        header="It's not as easy as 1-2-3."
+                        desc="The journey of change may be long, but our sessions are quick. We get
+to the point and tell you what you want to know (and nothing else).
+Old habits are hard to break."
+                    />
+                    <ImprovementCard
+                        header="Old habits are hard to break."
+                        desc="And bad behaviors die hard. Fortunately, we give you great, science- backed techniques to use."
+                    />
+                    <ImprovementCard
+                        header="It's not as easy as 1-2-3."
+                        desc="The journey of change may be long, but our sessions are quick. We get
+to the point and tell you what you want to know (and nothing else).
+Old habits are hard to break."
+                    />
+                    <ImprovementCard
+                        header="You and your motivation don't have a
+long-term relationship."
+                        desc="Luckily, we can proactively prepare you for the marathon, not just the race. Effective, memorable exerciseswill help you stick to your goals.
+Books just don't offer practical solutions."
+                    />
+
+                    <ImprovementCard
+                        header="Books just don't offer practical solutions."
+                        desc="Remember when you learned to ride a bike just by reading? Yeah we don't either. We're not saying books are bad, but they're not the best way to learn new skills.
+                         We're here to help you learn by doing."
+                    />
                 </div>
             </div>
         </div>
