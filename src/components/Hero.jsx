@@ -11,7 +11,7 @@ function Hero() {
               Master your life by mastering emotions.
             </p>
             <div className="flex gap-10">
-            <div className="w-[150px] h-[45px] bg-[url('/app-store.svg')] bg-cover"></div>
+              <div className="w-[150px] h-[45px] bg-[url('/app-store.svg')] bg-cover"></div>
 
               <p className="text-left">
                 <span className="block">⭐ ⭐ ⭐ ⭐ ⭐</span>

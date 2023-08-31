@@ -1,7 +1,7 @@
 function Info() {
   return (
     <div className="h-[100vh] w-[100vw] p-12 relative ">
-      <div className="w-[100%] h-[100%] flex flex-col justify-center rounded-2xl bg-[#FEF6F1] p-10 " >
+      <div className="w-[100%] h-[100%] flex flex-col justify-center rounded-2xl bg-[#FEF6F1] p-10 ">
         <div>
           <p className="text-lg font-semibold my-4 text-gray-700">
             Built out of frustration
