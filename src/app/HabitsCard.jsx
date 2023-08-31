@@ -2,9 +2,9 @@ import EmojiCard from "@/Components/EmojiCards";
 function HabitsCard() {
     return (
         <div className="flex flex-col" >
-            <div className="mb-8 px-14">
+            <div className="mb-10 px-14 ">
                 <span className="font-semibold text-5xl inline-block">Does this sound fimiliar...</span>
-                <span className="inline-block h-14 w-14 bg-[url('/SadCat.png')] bg-center bg-cover my-4"> </span>
+                <span className="inline-block h-14 w-14 bg-[url('/SadCat.png')] bg-center bg-cover ml-5"> </span>
             </div>
 
             <div className="overflow-x-scroll pb-10">
