@@ -36,8 +36,118 @@ body {
     height: auto;
     max-width: 100vw;
 }
-
+/* Utlis */
 .info-cat{
   border-bottom:4px solid rgb(255, 225, 168) ;
+}
 
+.circle{
+  position: absolute;
+  z-index: 5;
+  height: 50px;
+  background-color: #D58E4B;
+  width: 50px;
+  border-radius: 50%;
+  bottom: 0;
+  top:0;
+  margin:auto 0 ;
+  border: 4px solid #ce630083;
+  text-align:  center;
+  line-height: 42px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.circle-one{
+  left: 0;
+}
+
+.circle::before{
+  content: 'Answer questions on social skills';
+  position: absolute;
+  left: -120px;
+  top: 70px;
+  color: black;
+  line-height: 1.5;
+  width: 300px;
+  font-weight: 500;
+}
+
+.circle-two::before{
+  content: 'The others answer other questions for you';
+}
+
+.circle-three::before{
+  content: 'Find out where you and others see things in same way';
+}
+.circle-two{
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.circle-three{
+  right: 0;
+}
+
+
+.user{
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.user-one{
+  background-color: #6341ee;
+}
+.user-two{
+  left:30%;
+  background-color: #3fc2fb;
+}
+.user-three{
+  right:30%;
+  background-color: #fdb338;
+}
+.user-four{
+  right: 0;
+  background-color: #58c896;
+}
+
+.user::before{
+  content: "";
+  position: absolute;
+  text-align: center;
+  font-weight: 500;
+  height: 3rem;
+  line-height: 3rem;
+  width: 5rem;
+  top:-70px;
+  color: white;
+  width: 150px;
+  border-radius: 0.5rem;
+}
+
+.user-one::before{
+  content: 'You';
+  left: -20px;
+  width: 70px;
+  background-color: #6341ee;
+}
+.user-two::before{
+  content: 'Anonymous 1';
+  background-color: #3fc2fb;
+  top:60px;
+}
+.user-three::before{
+  content: 'Anonymous 2';
+  background-color: #fdb338;
+}
+.user-four::before{
+  content: 'Anonymous 3';
+  background-color: #58c896;
+  top:60px;
 }

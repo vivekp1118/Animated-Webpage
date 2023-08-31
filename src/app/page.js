@@ -3,6 +3,7 @@ import Hero from "./Hero"
 import HabitsCard from "./HabitsCard"
 import Info from "./Info"
 import Scroller from "./ImprovementScroller"
+import Assesment from "./Assesmment"
 export default function Home() {
   return (
     <>
@@ -11,6 +12,7 @@ export default function Home() {
     <HabitsCard/>
     <Info/>
     <Scroller/>
+    <Assesment/>
     </>
   )
 }
