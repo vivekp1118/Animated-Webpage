@@ -3,45 +3,40 @@ import ImprovementCard from "@/Utils/ImprovementCard";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-gsap.registerPlugin(ScrollTrigger)
-
+gsap.registerPlugin(ScrollTrigger);
 
 function Scroller() {
   const headerRef = useRef(null);
   const titleHeaderRef = useRef(null);
   const catRef = useRef(null);
 
-
   useEffect(() => {
     const elements = [
       { ref: headerRef, start: { opacity: 0, x: -200, y: 0 } },
       { ref: titleHeaderRef, start: { opacity: 0, x: -300, y: 0 } },
-      { ref: catRef, start: { opacity: 0, x: 300, y: -300, rotate: -90, } },
+      { ref: catRef, start: { opacity: 0, x: 300, y: -300, rotate: -90 } },
     ];
     const t1 = gsap.timeline({
       scrollTrigger: {
         trigger: headerRef.current,
         start: "bottom bottom",
-        end: "top 50%",
-
-        scrub: 1
-      }
+        end: "top 90%",
+        duration: 1,
+        scrub: 1,
+      },
     });
 
     elements.forEach(({ ref, start }) => {
-      t1.fromTo(
-        ref.current,
-        start,
-        {
-          opacity: 1,
-          duration: 2,
-          x: 0,
-          y: 0,
-          scale: 1,
-          rotate: 0,
-          ease: "none"
-        }
-      );
+      t1.fromTo(ref.current, start, {
+        opacity: 1,
+        duration: 2,
+        x: 0,
+        y: 0,
+        scale: 1,
+        rotate: 0,
+        ease: "none",
+        scrub: 1,
+      });
     });
 
     return () => {
@@ -49,14 +44,16 @@ function Scroller() {
     };
   }, []);
 
-
   return (
     <>
       <div className="h-[100vh] w-[100vw] p-24 relative overflow-hidden">
         <p className="text-lg font-medium text-gray-800 mt-3" ref={headerRef}>
           Wrong with self-improvement &amp; how we&apos;re fixing it.
         </p>
-        <p className="text-5xl font-bold mb-4 inline-block" ref={titleHeaderRef}>
+        <p
+          className="text-5xl font-bold mb-4 inline-block"
+          ref={titleHeaderRef}
+        >
           Self-improvement. Ugh.
         </p>
         <span

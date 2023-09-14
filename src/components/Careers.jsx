@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 function Careers() {
   const vacanciesHeader = useRef(null);
@@ -19,16 +19,21 @@ function Careers() {
       },
     });
 
-    t1.fromTo(vacanciesHeader.current, { opacity: 0, x: -200 }, { opacity: 1, x: 0, duration: 1 });
+    t1.fromTo(
+      vacanciesHeader.current,
+      { opacity: 0, x: -200 },
+      { opacity: 1, x: 0, duration: 1 }
+    );
     return () => {
       t1.kill();
     };
-  }, [])
+  }, []);
   return (
     <div className="h-[90vh] w-[100%] p-20 mt-10 border-solid border-b-[3px] border-gray-300">
-      <p className="text-5xl font-bold mb-14" ref={vacanciesHeader}>Open vacancies</p>
+      <p className="text-5xl font-bold mb-14" ref={vacanciesHeader}>
+        Open vacancies
+      </p>
       <div className="flex justify-between">
-
         <JobCard
           title="Senior Full-Stack Engineer"
           position="Full-time position"
@@ -52,12 +57,8 @@ function Careers() {
           salary="€20-24k, 0.5-1.50% equity share options"
           id={3}
         />
-
-
       </div>
     </div>
-
-
   );
 }
 
