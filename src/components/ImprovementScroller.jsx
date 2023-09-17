@@ -46,23 +46,26 @@ function Scroller() {
 
   return (
     <>
-      <div className="h-[100vh] w-[100vw] p-24 relative overflow-hidden">
-        <p className="text-lg font-medium text-gray-800 mt-3" ref={headerRef}>
+      <div className="relative h-[100vh] w-[100vw] overflow-hidden p-10 md:p-24">
+        <p
+          className="mb-5 text-lg font-medium text-gray-800 md:mb-0 md:mt-3 "
+          ref={headerRef}
+        >
           Wrong with self-improvement &amp; how we&apos;re fixing it.
         </p>
         <p
-          className="text-5xl font-bold mb-4 inline-block"
+          className="mb-4 inline-block text-4xl font-bold md:text-5xl"
           ref={titleHeaderRef}
         >
           Self-improvement. Ugh.
         </p>
         <span
-          className="inline-block h-14 w-14 bg-[url('/CryingCat.png')] bg-center bg-cover ml-5"
+          className="ml-5 inline-block h-14 w-14 bg-[url('/CryingCat.png')] bg-cover bg-center"
           ref={catRef}
         />
 
-        <div className="flex w-[100%] h-[90vh] px-5 justify-center overflow-y-auto">
-          <div className="flex flex-col w-[550px] gap-14  mt-10 flex-nowrap">
+        <div className="flex h-[90vh] w-[100%] justify-center overflow-y-auto px-5">
+          <div className="mt-10 flex w-[550px] flex-col  flex-nowrap gap-14">
             <ImprovementCard
               header="It's not as easy as 1-2-3."
               desc="The journey of change may be long, but our sessions are quick. We get
@@ -124,17 +127,17 @@ Books just don't offer practical solutions."
         </div>
       </div>
       <>
-        <div className="flex justify-evenly items-center h-[80vh]">
-          <p className="text-2xl font-semibold w-[300px] h-[150px]">
+        <div className="mx-10 my-10 flex flex-col items-center justify-evenly gap-10 pb-6 sm:flex-row sm:gap-0 md:py-16">
+          <p className="h-fit w-fit text-2xl font-semibold sm:h-[200px] sm:w-[300px]">
             Be the best you with EQ
           </p>
 
-          <p className="text-base text-gray-600 font-medium w-[300px] h-[150px]">
+          <p className="w-full text-base font-medium text-gray-600 sm:h-[200px] sm:w-[300px]">
             Not having your own emotions under control might be holding you
             back.
           </p>
 
-          <p className="text-base text-gray-600 font-medium w-[300px] h-[150px]">
+          <p className="w-full text-base font-medium text-gray-600 sm:h-[200px] sm:w-[300px]">
             Additionally, not understanding those of others stops you from being
             parent, friend you can be.
           </p>

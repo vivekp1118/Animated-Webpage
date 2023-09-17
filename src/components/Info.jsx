@@ -42,28 +42,28 @@ function Info() {
   }, []);
 
   return (
-    <div className="h-[100vh] w-[100vw] p-12 relative">
-      <div className="w-[100%] h-[100%] flex flex-col justify-center rounded-2xl bg-[#FEF6F1] p-10 ">
+    <div className="relative h-full w-[100vw] px-6 py-12 sm:h-[100vh] sm:p-12">
+      <div className="flex h-[100%] w-[100%] flex-col justify-center rounded-2xl bg-[#FEF6F1] p-6 sm:p-10 ">
         <div>
-          <p className="text-lg font-semibold my-4 text-gray-700 ">
+          <p className="my-4 text-lg font-semibold text-gray-700 ">
             Built out of frustration
           </p>
-          <p className="text-5xl font-bold my-4" ref={headerRef}>
+          <p className="my-4 text-4xl font-bold md:text-5xl" ref={headerRef}>
             Meet the ahead app
           </p>
         </div>
-        <div className="flex flex-row w-[100%] h[100%] my-6">
-          <div className="w-[50%]">
+        <div className="my-6 flex h-[100%] w-[100%] flex-col md:flex-row">
+          <div className="w-full md:w-[50%]">
             <div
-              className="w-[200px] h-[200px] bg-[url('/JoyFulCat.png')] rounded-tl-10 rounded-tr-1 bg-cover mx-auto info-cat"
+              className="rounded-tl-10 rounded-tr-1 info-cat mx-auto h-[150px] w-[150px] bg-[url('/JoyFulCat.png')] bg-cover md:h-[200px] md:w-[200px]"
               ref={catRef}
             ></div>
           </div>
           <div
-            className="w-[40%] leading-relaxed text-xl font-semibold text-gray-700"
+            className="w-full text-xl font-semibold leading-relaxed text-gray-700 md:w-[40%]"
             ref={paraRef}
           >
-            <p className="mb-5">
+            <p className="md:my-5">
               A personalized pocket coach that provides bite- sized,
               science-driven tools to boost emotional intelligence.
             </p>

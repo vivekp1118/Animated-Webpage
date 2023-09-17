@@ -1,43 +1,46 @@
-"use client"
+"use client";
 
 import EmojiCard from "@/Utils/EmojiCards";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 function HabitsCard() {
-  const sectionRef = useRef(null)
-  gsap.registerPlugin(ScrollTrigger)
+  const sectionRef = useRef(null);
+  gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
     let scrollTween = gsap.to("#scroller", {
-      x: '-80%',
+      x: "-80%",
       duration: 2,
       ease: "none",
       scrollTrigger: {
         trigger: "#scroller",
         start: "top 90%",
         end: "bottom 25%",
-        scrub: true
-      }
+        scrub: true,
+      },
     });
 
     return () => {
       scrollTween.kill();
     };
-
   }, []);
 
   return (
     <div className="flex flex-col">
-      <div className="mb-10 px-14 ">
-        <span className="font-semibold text-5xl inline-block">
+      <div className="mb-10 pl-7">
+        <span className="inline-block w-[65%] text-3xl font-semibold sm:text-5xl">
           Does this sound fimiliar...
         </span>
-        <span className="inline-block h-14 w-14 bg-[url('/SadCat.png')] bg-center bg-cover ml-5" />
+        <span className="ml-5 inline-block h-14 w-14 bg-[url('/SadCat.png')] bg-cover bg-center" />
       </div>
 
       <div className="overflow-x-scroll pb-10">
-        <div className="flex flex-row gap-8 flex-nowrap mx-10 " ref={sectionRef} id="scroller">
+        <div
+          className="mx-10 flex flex-row flex-nowrap gap-8 "
+          ref={sectionRef}
+          id="scroller"
+        >
           <EmojiCard
             color="#6443E9"
             isDark={true}

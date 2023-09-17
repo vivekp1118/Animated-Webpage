@@ -1,42 +1,42 @@
 function Hero() {
   return (
     <>
-      <div className="h-[100vh] w-[100%] px-9 pb-9">
-        <div className="h-[90vh] w-[100%] bg-[#EEEBFE] rounded-3xl flex items-center p-12">
-          <div className="w-[50%]">
-            <p className="text-base text-gray-900 font-medium mb-5">
+      <div className="h-full w-[100%] p-4 sm:h-[100vh] sm:px-9 sm:pb-9">
+        <div className="flex h-full w-[100%] flex-col items-center rounded-3xl bg-[#EEEBFE] p-12 sm:h-[90vh] sm:flex-row">
+          <div className="w-full sm:w-[50%]">
+            <p className="mb-5 text-base font-medium text-gray-900">
               Ahead App
             </p>
-            <p className="text-6xl font-bold mb-5 leading-[1.1]">
+            <p className="mb-5 text-4xl font-bold leading-[1.1] sm:text-5xl md:text-6xl">
               Master your life by mastering emotions.
             </p>
-            <div className="flex gap-10">
-              <div className="w-[150px] h-[45px] bg-[url('/app-store.svg')] bg-cover"></div>
+            <div className="flex flex-wrap gap-5">
+              <div className="h-[45px] w-[150px] flex-shrink-0 bg-[url('/app-store.svg')] bg-cover"></div>
 
               <p className="text-left">
                 <span className="block">⭐ ⭐ ⭐ ⭐ ⭐</span>
-                <span className="text-gray-800 ml-1 block">
+                <span className="ml-1 block text-gray-800">
                   100+ AppStore reviews
                 </span>
               </p>
             </div>
           </div>
-          <div className="w-[50%] flex items-center justify-center">
-            <div className="mobile-phone w-[180px] h-[360px] border-black border-4 rounded-2xl bg-[url('/Poster.png')] bg-[#FFEEE1] bg-center bg-cover"></div>
+          <div className="mt-10 flex w-full items-center justify-center sm:m-0 sm:w-[50%]">
+            <div className="mobile-phone h-[360px] w-[180px] rounded-2xl border-4 border-black bg-[#FFEEE1] bg-[url('/Poster.png')] bg-cover bg-center"></div>
           </div>
         </div>
       </div>
-      <div className="flex justify-evenly items-center px-18 pb-6">
-        <p className="text-2xl font-semibold w-[300px] h-[200px]">
+      <div className="md:px-18 mx-10 my-10 flex flex-col items-center justify-evenly gap-10 pb-6 sm:flex-row sm:gap-0">
+        <p className="h-fit w-fit text-2xl font-semibold sm:h-[200px] sm:w-[300px]">
           EQ Beats IQ
         </p>
 
-        <p className="text-base text-gray-600 font-medium w-[300px] h-[200px]">
+        <p className="w-full text-base font-medium text-gray-600 sm:h-[200px] sm:w-[300px]">
           People with high emotional intelligence (EQ) live more fullfilled
           life. They tend to be happier and have healthier relationships.
         </p>
 
-        <p className="text-base text-gray-600 font-medium w-[300px] h-[200px]">
+        <p className="w-full text-base font-medium text-gray-600 sm:h-[200px] sm:w-[300px]">
           They are more successful at their persuit and make for inspiring
           leaders. According to research, they earn $29k a year.
         </p>

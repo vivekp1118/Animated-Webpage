@@ -22,18 +22,18 @@ function Careers() {
     t1.fromTo(
       vacanciesHeader.current,
       { opacity: 0, x: -200 },
-      { opacity: 1, x: 0, duration: 1 }
+      { opacity: 1, x: 0, duration: 1 },
     );
     return () => {
       t1.kill();
     };
   }, []);
   return (
-    <div className="h-[90vh] w-[100%] p-20 mt-10 border-solid border-b-[3px] border-gray-300">
-      <p className="text-5xl font-bold mb-14" ref={vacanciesHeader}>
+    <div className="mt-10 h-[auto] w-[100%] border-b-[3px] border-solid border-gray-300 p-20">
+      <p className="mb-14 text-5xl font-bold" ref={vacanciesHeader}>
         Open vacancies
       </p>
-      <div className="flex justify-between">
+      <div className="flex flex-col  items-center gap-10 sm:flex-row">
         <JobCard
           title="Senior Full-Stack Engineer"
           position="Full-time position"
