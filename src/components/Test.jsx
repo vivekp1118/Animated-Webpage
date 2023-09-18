@@ -12,9 +12,10 @@ function Test() {
     const t1 = gsap.timeline({
       scrollTrigger: {
         trigger: buttonRef.current,
-        start: "top 90%",
-        end: "bottom 90%",
+        start: "top 95%",
+        end: "0 85%",
         scrub: 2,
+        markers: true,
       },
     });
 

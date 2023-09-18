@@ -19,8 +19,8 @@ function Info() {
       scrollTrigger: {
         duration: 2,
         trigger: headerRef.current,
-        start: "bottom 70%",
-        end: "top 40%",
+        start: "top 90%",
+        end: "bottom 60%",
         scrub: 1,
       },
     });

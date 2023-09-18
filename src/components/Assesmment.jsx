@@ -13,7 +13,8 @@ function Assesment() {
     const t1 = gsap.timeline({
       scrollTrigger: {
         trigger: headerRef.current,
-        start: "top 60%",
+        start: "top 80%",
+        end: "bottom 50%",
         scrub: 2,
       },
     });

@@ -19,8 +19,8 @@ function Scroller() {
     const t1 = gsap.timeline({
       scrollTrigger: {
         trigger: headerRef.current,
-        start: "bottom bottom",
-        end: "top 90%",
+        start: "top 80%",
+        end: "bottom 50%",
         duration: 1,
         scrub: 1,
       },
