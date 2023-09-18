@@ -15,7 +15,6 @@ function Test() {
         start: "top 95%",
         end: "0 85%",
         scrub: 2,
-        markers: true,
       },
     });
 
