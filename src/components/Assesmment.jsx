@@ -43,15 +43,15 @@ function Assesment() {
         ref={container}
       >
         <div className="text-center" ref={headerRef}>
-          <p className="mx-6 text-lg font-semibold text-gray-700  md:mt-10">
+          <p className="mx-6 text-left text-lg font-semibold text-gray-700  md:mt-10 md:text-center">
             Let your friends, family, and co-workers (anonymously) rate your
             social skills.
           </p>
-          <p className="my-4 text-4xl font-bold md:text-5xl">
+          <p className="my-4 px-6 text-left text-4xl font-bold md:text-center md:text-5xl">
             Ever wondered what others think of you?
           </p>
         </div>
-        <div className="dashed-line relative my-20 h-[4px] w-[400px] bg-[#e292479d] md:w-[900px]">
+        <div className="dashed-line relative my-20 h-[4px] w-[340px] bg-[#e292479d] md:w-[900px]">
           <div className="circle circle-one pop-up">1</div>
           <div className="circle circle-two pop-up">2</div>
           <div className="circle circle-three pop-up">3</div>

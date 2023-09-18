@@ -169,8 +169,8 @@ body {
   }
 
   .circle::before {
-    width: 150px;
-    left: -60px;
-    font-size: 0.8rem;
+    width: 100px;
+    left: -30px;
+    font-size: 0.7rem;
   }
 }

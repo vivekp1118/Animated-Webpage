@@ -33,9 +33,9 @@ function About() {
     };
   }, []);
   return (
-    <div className="w- mx-12 h-[200vh] overflow-hidden rounded-2xl bg-[#F3F1FF] pt-10 sm:h-[120vh]">
-      <div className="flex h-[100%] w-[100%] flex-col justify-between p-10 shadow-lg sm:flex-row">
-        <div className="flex h-[100%] w-[auto] flex-col gap-8 sm:w-[40%]">
+    <div className="mx-6 h-[auto] overflow-hidden rounded-2xl bg-[#F3F1FF] pt-10 md:mx-12 md:h-[120vh]">
+      <div className="flex h-[100%] w-[100%] flex-col justify-between p-6 shadow-lg md:flex-row md:p-10">
+        <div className="flex h-[100%] w-[auto] flex-col gap-8 md:w-[40%]">
           <p className="text-5xl font-bold" ref={workHeader}>
             Work with us
           </p>
@@ -60,9 +60,9 @@ function About() {
           </div>
         </div>
 
-        <div className="h-full w-[auto] sm:w-[40%]">
+        <div className="h-[400px] w-[auto] md:h-full md:w-[40%]">
           <p
-            className="my-8 flex text-5xl font-semibold text-[#6542EA] sm:my-0 sm:mb-8"
+            className="my-8 flex text-5xl font-semibold text-[#6542EA] md:my-0 md:mb-8"
             ref={aheadHeader}
           >
             ahead
