@@ -13,7 +13,7 @@ function JobCard(props) {
   };
   return (
     <div
-      className="card duration-3000 h-[fit-content] w-[340px] cursor-pointer rounded-2xl bg-[#FEFBEC] p-7 shadow-lg"
+      className="card duration-3000 h-[fit-content] w-auto cursor-pointer rounded-2xl bg-[#FEFBEC] p-7 shadow-lg sm:w-[340px]"
       onMouseEnter={(e) => {
         onEnter(e);
         setShowDetails(props.id);

@@ -39,12 +39,12 @@ function About() {
           <p className="text-5xl font-bold" ref={workHeader}>
             Work with us
           </p>
-          <div className="h-[100%] w-[100%] rounded-2xl bg-white ">
+          <div className="h-fit w-[100%] rounded-2xl bg-white ">
             <div className="p-10">
               <span className="block h-14 w-14 bg-[url('/JoyFulCat.png')] bg-cover bg-center"></span>
               <p className="my-3 text-2xl font-semibold">About</p>
               <p className="text-lg font-medium text-gray-600 ">
-                At ahead our goal is to make self- improvement fun and lasting.
+                At ahead our goal is to make self-improvement fun and lasting.
                 We know there&rsquo;s a way how to make it work. And that&apos;s
                 what aHead is all about!
               </p>
@@ -68,7 +68,7 @@ function About() {
             ahead
           </p>
           <div className="custom-scroller flex h-[85%] flex-col flex-nowrap gap-10 overflow-scroll pb-10">
-            <div className="h-[220px] w-[330px] rounded-2xl bg-white p-9 ">
+            <div className="h-[fit] w-[auto] rounded-2xl bg-white p-9 lg:h-[220px] lg:w-[330px] ">
               <p className="pb-5 text-base font-medium text-black">
                 Power through, even when the going gets tough
               </p>
@@ -78,7 +78,7 @@ function About() {
               </p>
             </div>
 
-            <div className="h-[220px] w-[330px] rounded-2xl bg-white p-9">
+            <div className="h-[fit] w-[auto] rounded-2xl bg-white p-9 lg:h-[220px] lg:w-[330px] ">
               <p className="pb-5 text-base font-medium text-black">
                 Power through, even when the going gets tough
               </p>
@@ -88,7 +88,7 @@ function About() {
               </p>
             </div>
 
-            <div className="h-[220px] w-[330px] rounded-2xl bg-white p-9">
+            <div className="h-[fit] w-[auto] rounded-2xl bg-white p-9 lg:h-[220px] lg:w-[330px] ">
               <p className="pb-5 text-base font-medium text-black">
                 Power through, even when the going gets tough
               </p>
@@ -98,7 +98,7 @@ function About() {
               </p>
             </div>
 
-            <div className="h-[220px] w-[330px] rounded-2xl bg-white p-9">
+            <div className="h-[fit] w-[auto] rounded-2xl bg-white p-9 lg:h-[220px] lg:w-[330px] ">
               <p className="pb-5 text-base font-medium text-black">
                 Power through, even when the going gets tough
               </p>
@@ -108,7 +108,7 @@ function About() {
               </p>
             </div>
 
-            <div className="h-[220px] w-[330px] rounded-2xl bg-white p-9">
+            <div className="h-[fit] w-[auto] rounded-2xl bg-white p-9 lg:h-[220px] lg:w-[330px] ">
               <p className="pb-5 text-base font-medium text-black">
                 Power through, even when the going gets tough
               </p>
@@ -118,7 +118,7 @@ function About() {
               </p>
             </div>
 
-            <div className="h-[220px] w-[330px] rounded-2xl bg-white p-9">
+            <div className="h-[fit] w-[auto] rounded-2xl bg-white p-9 lg:h-[220px] lg:w-[330px] ">
               <p className="pb-5 text-base font-medium text-black">
                 Power through, even when the going gets tough
               </p>
@@ -128,7 +128,7 @@ function About() {
               </p>
             </div>
 
-            <div className="h-[220px] w-[330px] rounded-2xl bg-white p-9">
+            <div className="h-[fit] w-[auto] rounded-2xl bg-white p-9 lg:h-[220px] lg:w-[330px] ">
               <p className="pb-5 text-base font-medium text-black">
                 Power through, even when the going gets tough
               </p>

@@ -20,7 +20,7 @@ function Info() {
         duration: 2,
         trigger: headerRef.current,
         start: "top 90%",
-        end: "bottom 60%",
+        end: "top 50%",
         scrub: 1,
       },
     });
@@ -42,7 +42,7 @@ function Info() {
   }, []);
 
   return (
-    <div className="relative h-full w-[100vw] px-6 py-12 sm:h-[100vh] sm:p-12">
+    <div className="relative h-full w-[100vw] px-6 py-12 sm:h-[fit] sm:p-12">
       <div className="flex h-[100%] w-[100%] flex-col justify-center rounded-2xl bg-[#FEF6F1] p-6 sm:p-10 ">
         <div>
           <p className="my-4 text-lg font-semibold text-gray-700 ">

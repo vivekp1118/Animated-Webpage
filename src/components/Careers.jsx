@@ -29,7 +29,7 @@ function Careers() {
     };
   }, []);
   return (
-    <div className="mt-10 h-[auto] w-[100%] border-b-[3px] border-solid border-gray-300 p-20">
+    <div className=" mt-10 h-[auto] w-[100%] border-b-[3px] border-solid border-gray-300 p-5 md:p-20">
       <p className="mb-14 text-5xl font-bold" ref={vacanciesHeader}>
         Open vacancies
       </p>

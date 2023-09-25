@@ -10,14 +10,15 @@ function HabitsCard() {
 
   useEffect(() => {
     let scrollTween = gsap.to("#scroller", {
-      x: "-1000",
+      x: "-600",
       duration: 2,
       ease: "none",
       scrollTrigger: {
         trigger: "#scroller",
-        start: "top 90%",
-        end: "bottom 20%",
+        start: "top 80%",
+        end: "top 30%",
         scrub: true,
+        markers: true,
       },
     });
 
